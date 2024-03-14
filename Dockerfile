@@ -5,10 +5,10 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 WORKDIR /app
 
 # Copy the Spring Boot application JAR file from the local filesystem to the container
-COPY target/eStoreBackend.jar /app/eStoreBackend.jar
+COPY target/eStoreBackend-0.0.1-SNAPSHOT.jar /app/eStoreBackend-0.0.1-SNAPSHOT.jar
 
 # Expose the port on which your Spring Boot application is running (if needed)
 EXPOSE 8080
 
 # Specify the command to run your Spring Boot application when the container starts
-CMD ["java", "-jar", "eStoreBackend.jar"]
+CMD ["java", "-jar", "eStoreBackend-0.0.1-SNAPSHOT.jar"]
