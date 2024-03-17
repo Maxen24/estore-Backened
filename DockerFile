@@ -1,4 +1,4 @@
-# Use a base image with Java and a suitable version of the JRE
+# Use a base image with Java and a suitable version of the Java JRE
 FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Set the working directory inside the container
